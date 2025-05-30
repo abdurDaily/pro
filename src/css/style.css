@@ -1,5 +1,43 @@
 @import "tailwindcss";
-
-.container{
-    @apply w-[1100px] mx-auto
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
+.container {
+  @apply w-full max-w-[1100px] mx-auto px-4 lg:px-0;
+}
+:root {
+  --font-family: "Manrope", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --third-family: "Font Awesome 5 Brands", sans-serif;
+  --test: red;
+}
+.banner .top_p {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144%;
+  letter-spacing: 0.03em;
+  color: #1c1d20;
+}
+.banner h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 108%;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #1c1d20;
+}
+.banner .footer_p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: #666;
+}
+.banner .moving_text {
+  font-size: 24px !important;
+  text-transform: capitalize;
+  font-family: var(--second-family);
+}
+.banner input::placeholder {
+  color: #000 !important;
 }
